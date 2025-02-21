@@ -17,20 +17,20 @@
 
 ## Problem Statement
 
-	This dashboard helps in understanding the patients medical record. It Also comes in handy in terms of . It also comes in handy in knowing the medical status, improvements and progress by some particular sates.
-	Through the therapy given through different medications we can get to know their improvement areas and effectiveness of the same, thus the treatment cane be improved.
-	It also lets us know the average stay,total patient, revenu generaed and many more.
+	This dashboard helps in understanding the patients medical record. It Also comes in handy in terms knowing the medical status, improvements and progress by some particular sates.
+	Through the therapy given through different medications we can get to know their improvement areas and effectiveness of the same, thus the treatment can be improved.
+	It also lets us know the average stay,total patient, revenue generated and many more.
 
 ### Steps followed 
 
- - Step 1 : Loaded data into Power BI Desktop, dataset as a exce file.
+ - Step 1 : Loaded data into Power BI Desktop, dataset as a excel file.
  - Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
  - Step 3 : Also since by default, profile will be opened only for 1000 rows so you need to select "column profiling based on entire dataset".
  - Step 4 : It was observed that couple columns which appeared irrelevant and added no values to the data set were removed.
  - Step 5 : Columns like name, medical condition, insurance provider had improper case, Hence formatted to properly.
  - Step 6 : Created a calculated column and named years inorder to exract only the years from the date column.
  - Step 7 : Created the a custom column for age buckets , wrote dax to achieve this.
- - Step 8 : Created a seerated measures table to roganize the data effeciently neatly.
+ - Step 8 : Created a seperate measures table to organize the data effeciently.
  - Step 10 : Renamed columns accordingly and changed the data type.
  - Step11 : Sorted the data set based on name column alphabetically.
  - Step 12 : From the visualization pane, visuals were added to derive the insights.
@@ -43,11 +43,7 @@
  	 In the above  report view, under the insert tab, a text box was added to the canvas, wherein the title was mentioned.
 
 
- - Step 16 : With reference of the date column extracted the year , for a better visual represntation.
-
-Snap of the column 
-
-
+ - Step 16 : With reference of the date column extracted the year , for a better visual representation.
 
 
  -Step 17: Created new column and following DAX expression written:
@@ -84,7 +80,7 @@ A card visual was used to represent count of customers.
  
  A card visual was used to represent this perecntage.
  
- sanp of the average stay  
+ snap of the average stay  
  
 ![Image](https://github.com/user-attachments/assets/788bc500-6afe-4936-94ec-951c80f7ce35)
 
@@ -92,11 +88,11 @@ A card visual was used to represent count of customers.
 
 	Revenue = SUM(Healthcare[Billing Amount])
 
-A card visual was used to display the revenu genarated
+A card visual was used to display the revenue genarated
  
 ![Image](https://github.com/user-attachments/assets/016b291d-f9cb-45ee-8a8e-9d34db6d2f1a)
  
-above cards are intereactive with thfilters created
+above cards are intereactive with the filters created
 
 Line Chart
 
@@ -119,7 +115,7 @@ Snap of the visual
 Bar Chart
 
  - Step 22 : created bar chart for showcasing the count of patients with the admission type and test result. 
-create seperately for admission type and reult and created bookmarks using the added an chart functionality  switching between the visuals.
+create seperately for admission type and result and created bookmarks using the added an chart functionality  switching between the visuals.
 
  - Step 23 : created bar chart for viualizin count of patients by age group 
 	added text box for name of the visuals 
@@ -136,7 +132,7 @@ snap of the bar chart
 
 The count gives the appropriate count when filter comes into the action.
 
- -Step 24 : Created bar chart for cisualizing the count of patients admitted with type, this is helpful in showing the patients incomming and outgoing with result types
+ -Step 24 : Created bar chart for visualizing the count of patients admitted with type, this is helpful in showing the patients incomming and outgoing with result types
 
 	The total admission including all the types
 	2019 - 5.34k
